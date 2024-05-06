@@ -1,0 +1,11 @@
+step 1:install git
+step 2:open cmd and cd to project folder
+step 3:
+echo "# task-management" >> README.md
+git init
+git add README.md
+git add .            
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ak9347128658/task-management.git
+git push -u origin main
