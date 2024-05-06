@@ -9,3 +9,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/ak9347128658/task-management.git
 git push -u origin main
+
+
+after use 
+https://github.com/ak9347128658/task-management.git
