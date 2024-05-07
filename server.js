@@ -10,6 +10,12 @@ dotenv.config();
 const PORT = process.env.PORT;
 const app = express();
 
+app.get('/', (req, res) => {
+    // res.status(404);
+    // throw new Error('This is an unhandled error');
+ res.status(200).json({ message: 'Welcome to the application.' });
+});
+
 app.use(bodyParser.json({ limit: '50mb'}));
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -17,11 +23,7 @@ app.use(userRoutes);
 app.use(taskRoutes);
 
 
-app.get('/', (req, res) => {
-    // res.status(404);
-    // throw new Error('This is an unhandled error');
- res.status(200).json({ message: 'Welcome to the application.' });
-});
+
 
 
 app.use(errorHandler); // Error handling middleware
