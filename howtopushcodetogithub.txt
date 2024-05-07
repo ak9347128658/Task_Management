@@ -13,3 +13,7 @@ git push -u origin main
 
 after use 
 https://github.com/ak9347128658/task-management.git
+
+=================
+git remote remove origin
+git remote add origin https://github.com/ak9347128658/Task_Management.git
